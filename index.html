@@ -1,0 +1,159 @@
+<html>
+	<head>
+	
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<!--		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.4/css/buttons.bootstrap.min.css"/>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>		
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap.min.js"></script>		
+		
+		<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.4/js/dataTables.buttons.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.4/js/buttons.bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.colVis.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.4/js/buttons.flash.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.4/js/buttons.html5.js"></script>
+-->
+
+		
+
+		
+	</head>
+<body>
+
+<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th class="office">Name</th>
+                <th class="office">Position</th>
+                <th class="office">Office</th>
+                <th class="hr">Age</th>
+                <th class="hr">Start date</th>
+                <th class="hr">Salary</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+        <tbody>
+ 
+           <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>123456789</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>170,75</td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009/01/12</td>
+                <td>86,00</td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012/03/29</td>
+                <td>433,06</td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>22</td>
+            </tr>		
+			
+			
+			
+
+			
+        </tbody>
+    </table>
+
+		<style>
+		
+h1 {
+  margin: 0;
+  padding: 20px 0;    
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
+}
+
+p, li {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+		</style>
+	
+	<h1> Čia hedingas</h1>
+<p>labas krabas poetas kotletas labas krabas poetas kotletaslabas krabas poetas kotletaslabas krabas poetas kotletaslabas krabas poetas kotletaslabas krabas poetas kotletas</p>
+
+
+
+<script>
+	$(document).ready(function() {
+	
+	/*
+$('#example').DataTable( {
+    dom: 'Bfrtip',
+    buttons: [ {
+        extend: 'colvis',
+        columnText: function ( dt, idx, title ) {
+            return (idx+1)+': '+title;
+        }
+    } ]
+} );*/
+	
+$('#example').DataTable( {
+    language:
+        buttons: {
+            copyTitle: 'Data copied',
+            copyKeys: 'Use your keyboard or menu to select the copy command'
+        }
+    },
+    buttons: [
+        'copyHtml5'
+    ]
+} );
+
+
+
+	} );
+</script>
+
+</body>
+</html>
